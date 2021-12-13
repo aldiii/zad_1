@@ -12,7 +12,7 @@ const prepareResults = (numbers) => {
   return numbers
     .sort((a, b) => a - b)
     .map(
-      (num) => `<div class =${num % 2 == 0 ? "left" : "right"}> ${num}</div>`
+      (num) => `<div class =${num % 2 == 0 ? "right" : "left"}> ${num}</div>`
     )
     .join("");
 };
